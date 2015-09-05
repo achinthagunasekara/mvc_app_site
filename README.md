@@ -46,6 +46,7 @@ That's it! Now go to http://YOUR_WEB_SERVER/mvc_site_app. You should see the app
 
 ##Layout
 
+```javascript
 ╔═══════════════════╗
 ║                   ║
 ║   Header File     ║
@@ -61,6 +62,7 @@ That's it! Now go to http://YOUR_WEB_SERVER/mvc_site_app. You should see the app
 ║   Footer File     ║
 ║                   ║
 ╚═══════════════════╝
+```
 
 Anything you'd put on header file will always appear in the application. Same goes for the footer page. However content on "Page" will change based on the view.
 

@@ -70,7 +70,11 @@ Anything you'd put on header file will always appear in the application. Same go
 
 Open /mvc_site_app/code/setup.ini.php file.
 
-Locate the '$valid_pages' array and add the new page you'll be creating. Please note array Key is the file name (without the extension) and array value is the HTML page title. Open /mvc_site_app/header.php file and look at <title> HTML tag to see how this is done. Please note unless the page you're viewing is in the '$valid_pages array', it can't be displayed.
+Locate the '$valid_pages' array and add the new page you'll be creating.
+
+Please note array Key is the file name (without the extension) and array value is the HTML page title. Open /mvc_site_app/header.php file and look at <title> HTML tag to see how this is done. 
+
+Please note unless the page you're viewing is in the '$valid_pages array', it can't be displayed.
 
 EG: 
 

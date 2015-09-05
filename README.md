@@ -27,7 +27,9 @@ Then open the first configuration file
 
 Set the base path in the file, save and exit (in the example below, it runs in /var/www/html/)
 
+```php
 define("BASE_PATH", '/var/www/html/mvc_site_app');
+```
 
 Then open the second configuration file
 
@@ -67,11 +69,13 @@ Locate the $valid_pages array and add the new page you'll be creating. Please no
 
 EG: 
 
+```php
 $valid_pages = array(
 		"home" => "Home Page Title",
 		"sample_page" => "Sample Page Title",
 		"sample_page_2" => "Sample Page Title 2"
 		);
+```
 
 Create the HTML page under "/mvc_site_app/templates/" directory.
 
@@ -95,7 +99,9 @@ Please make sure to name your module as MODULE_NAME.class.php to ensure they get
 
 There are already two configuration sections on the file. You can add as many as you like. Then you're able to access these items within your code.
 
+```php
 $config["SAMPLE_SECTION"]["CONFIG_ITEM"]
+```
 
 ##CSS, JavaScript and ETC.
 

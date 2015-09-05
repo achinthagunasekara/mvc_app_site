@@ -88,11 +88,15 @@ Create the HTML page under "/mvc_site_app/templates/" directory.
 
 Create a page with your application code under "/mvc_site_app/code/" directory. Now assign any variables that needs to be displayed on the HTML page as below.
 
+```php
 $tpl->assign('variable', $variable);
+```
 
 Then display the HTML page
 
+```php
 $tpl->display('home.tpl');
+```
 
 You'll be able to access your assigned variables on the HTML page using Smarty syntax EG: {$variable}. Please refer to the Smarty documentation at http://www.smarty.net/documentation for more information.
 

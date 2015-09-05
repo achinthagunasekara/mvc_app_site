@@ -46,19 +46,19 @@ That's it! Now go to http://YOUR_WEB_SERVER/mvc_site_app. You should see the app
 
 ##Layout
 
-```javascript
+```html
 ╔═══════════════════╗
 ║                   ║
 ║   Header File     ║
 ║                   ║
 ╟───────────────────╢
-║ 					║
-║ 					║
-║ 	Page Stuff		║
-║ 					║
-║ 					║
+║                   ║
+║                   ║
+║ 	Page Stuff      ║
+║                   ║
+║                   ║
 ╟───────────────────╢
-║ 					║
+║                   ║
 ║   Footer File     ║
 ║                   ║
 ╚═══════════════════╝

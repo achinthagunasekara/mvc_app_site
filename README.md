@@ -41,22 +41,21 @@ That's it! Now go to http://YOUR_WEB_SERVER/mvc_site_app. You should see the app
 
 ##Layout
 
--------------------------
-|                       |
-|      Header File      |
-|                       |
-|------------------------
-|                       |
-|                       |
-|                       |
-|      Page Stuff       |
-|                       |
-|                       |
-|------------------------
-|                       |
-|      Footer File      |
-|                       |
--------------------------
+╔═══════════════════╗
+║                   ║
+║   Header File     ║
+║                   ║
+╟───────────────────╢
+║ 					║
+║ 					║
+║ 	Page Stuff		║
+║ 					║
+║ 					║
+╟───────────────────╢
+║ 					║
+║   Footer File     ║
+║                   ║
+╚═══════════════════╝
 
 Anything you'd put on header file will always appear in the application. Same goes for the footer page. However content on "Page" will change based on the view.
 

@@ -116,6 +116,22 @@ There are already two configuration sections on the file. You can add as many as
 $config["SAMPLE_SECTION"]["CONFIG_ITEM"]
 ```
 
+If you're calling a $config item within a function please include the global $config variable
+
+```php
+global $config;
+```
+
+Or you could add it to the class constructor as below,
+
+```php
+function __construct() {
+
+	global $config;
+	$this->config = $config;
+}
+```
+
 ##CSS, JavaScript and ETC.
 
 You can add CSS, JavaScript and etc on the <head> section in the header file.

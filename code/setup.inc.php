@@ -69,7 +69,7 @@ else
 	echo "ADODB class not found";
 }
 
-require_once(SMARTY_DIR.'Smarty.class.php');
+require_once(SMARTY_DIR . 'Smarty.class.php');
 
 class Smarty_Extend extends Smarty
 {
@@ -97,8 +97,8 @@ define('DEFAULT_CACHE_LIFETIME', 3600);
 
 $tpl = new Smarty_Extend(BASE_PATH,false);
 
-if (file_exists(BASE_PATH.'/libs/phpmailer/class.phpmailer.php')) {
-        require_once(BASE_PATH.'/libs/phpmailer/class.phpmailer.php');
+if (file_exists(BASE_PATH . '/libs/phpmailer/class.phpmailer.php')) {
+        require_once(BASE_PATH . '/libs/phpmailer/class.phpmailer.php');
 }
 else
 {
@@ -119,7 +119,7 @@ if (isset($config['DEBUG']) && $config['DEBUG']) {
 
 /* Set a few vars that are always available to all apps */
 
-$tpl->assign('config_path',$config['PATH']);
-$tpl->assign('base_path','');
+$tpl->assign('config_path', $config['PATH']);
+$tpl->assign('base_path', '');
 
 ?>

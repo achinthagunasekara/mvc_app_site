@@ -32,13 +32,13 @@ else
 define('SMARTY_DIR', BASE_PATH.'/libs/smarty/');
 define('ADODB_BASE_PATH', BASE_PATH.'/libs/adodb/');
 
-if (file_exists(ADODB_BASE_PATH.'adodb.inc.php'))
+if (file_exists(ADODB_BASE_PATH . 'adodb.inc.php'))
 {
 	// use a diff. dir per unix user as sometimes
 	// we run as nobody/apache/cron/manual user
 	// and we get permission problems.
-	$unix_user = trim(`whoami`);
-	$ADODB_CACHE_DIR = BASE_PATH.'/files/adodb_cache/' . $unix_user;
+	$unix_user = trim('whoami');
+	$ADODB_CACHE_DIR = BASE_PATH . '/files/adodb_cache/' . $unix_user;
 	unset($unix_user);
 
 	if(!file_exists($ADODB_CACHE_DIR))
@@ -46,8 +46,8 @@ if (file_exists(ADODB_BASE_PATH.'adodb.inc.php'))
 		mkdir($ADODB_CACHE_DIR);
 	}
 
-	require_once(ADODB_BASE_PATH.'adodb-exceptions.inc.php');
-	require_once(ADODB_BASE_PATH.'adodb.inc.php');
+	require_once(ADODB_BASE_PATH . 'adodb-exceptions.inc.php');
+	require_once(ADODB_BASE_PATH . 'adodb.inc.php');
 
 	/**
 	* ADODB Connection to DB

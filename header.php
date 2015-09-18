@@ -20,6 +20,7 @@ else {
 <title><?php echo $title ?></title>
 
 <!-- Your CSS and Java Script -->
+<!-- eg: bootstrap css, 960gs... -->
 
 </head>
 <body>

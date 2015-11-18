@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Author: Archie Gunasekara
+ * Date: 2015
+ */
+
 $config = parse_ini_file(BASE_PATH . '/includes/config.ini.php', TRUE);
 
 $valid_pages = array(

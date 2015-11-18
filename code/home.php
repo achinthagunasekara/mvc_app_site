@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Author: Archie Gunasekara
+ * Date: 2015
+ */
+ 
 $name = "Achintha";
 
 //assign any varuables to the template

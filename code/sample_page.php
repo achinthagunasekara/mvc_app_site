@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Author: Archie Gunasekara
+ * Author: Achintha Gunasekara
  * Date: 2015
  */
 

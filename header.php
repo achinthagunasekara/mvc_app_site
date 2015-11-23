@@ -1,4 +1,8 @@
 <?php
+/*
+ * Author: Achintha Gunasekara
+ * Date: 2015
+ */
 if(array_key_exists(@$_REQUEST['page'], $valid_pages)) {
 	
 	$title = $valid_pages[@$_REQUEST['page']];

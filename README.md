@@ -8,7 +8,7 @@ This application used following libraries.
 * phpmailer - http://phpmailer.worxware.com
 * smarty - http://www.smarty.net
 
-I have used Smarty library to move view away from the model and controller.
+I have included these libraries with the application, but you should consider upgrading them to the latest.
 
 ##Installation
 

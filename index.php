@@ -5,8 +5,7 @@
  * Date: 2015
  */
  
-//include the base configuration path
-require_once('config.ini.php');
+require_once('config.ini.php'); //include the base configuration path
 //setup the environment
 require_once(BASE_PATH.'/code/setup.inc.php');
 

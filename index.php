@@ -6,9 +6,7 @@
  */
  
 require_once('config.ini.php'); //include the base configuration path
-//setup the environment
-require_once(BASE_PATH.'/code/setup.inc.php');
-
+require_once(BASE_PATH.'/code/setup.inc.php'); //setup the environment
 include "header.php";
 include "code/" . $page . ".php";
 include "footer.php";

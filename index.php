@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Author: Achintha Gunasekara
+ * Date: 2015
+ */
+ 
 //include the base configuration path
 require_once('config.ini.php');
 //setup the environment

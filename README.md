@@ -21,7 +21,7 @@ Set the permissions to Apache User. I use Ubuntu and Apache runs as www-data use
 ```bash
 chown -R www-data:www-data mvc_site_app
 
-chmod -R 0755 mvc_site_app
+chmod -R 0750 mvc_site_app
 ```
 
 Then open the first configuration file

@@ -116,6 +116,7 @@ There are already two configuration sections on the file. You can add as many as
 $config["SAMPLE_SECTION"]["CONFIG_ITEM"]
 ```
 
+<<<<<<< Updated upstream
 If you're calling a $config item within a function please include the global $config variable
 
 ```php

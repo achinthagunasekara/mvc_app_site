@@ -8,7 +8,7 @@ This application used following libraries.
 * phpmailer - http://phpmailer.worxware.com
 * smarty - http://www.smarty.net
 
-I have used Smarty library to move view away from the model and controller.
+I have included these libraries with the application, but you should consider upgrading them to the latest.
 
 ##Installation
 
@@ -21,7 +21,7 @@ Set the permissions to Apache User. I use Ubuntu and Apache runs as www-data use
 ```bash
 chown -R www-data:www-data mvc_site_app
 
-chmod -R 0755 mvc_site_app
+chmod -R 0750 mvc_site_app
 ```
 
 Then open the first configuration file
@@ -116,15 +116,22 @@ There are already two configuration sections on the file. You can add as many as
 $config["SAMPLE_SECTION"]["CONFIG_ITEM"]
 ```
 
+If you're calling a $config item within a function please include the global $config variable
+
+```php
+global $config;
+```
+
+Or you could add it to the class constructor as below,
+
+```php
+function __construct() {
+
+	global $config;
+	$this->config = $config;
+}
+```
+
 ##CSS, JavaScript and ETC.
 
 You can add CSS, JavaScript and etc on the <head> section in the header file.
-
-
-
-
-
-
-
-
-

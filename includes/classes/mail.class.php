@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Author: Archie Gunasekara
+ * Date: 2015
+ */
+
 class Mail
 {
 	public function send_email($body)

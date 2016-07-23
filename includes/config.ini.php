@@ -1,5 +1,5 @@
 ; <?php die(); ?>
-;
+
 [DB]
 DRIVER=mysql
 HOST=localhost

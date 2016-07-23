@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * Author: Achintha Gunasekara
+ * Date: 2015
+ */
+
 $config = parse_ini_file(BASE_PATH . '/includes/config.ini.php', TRUE);
 
 $valid_pages = array(
@@ -32,13 +37,13 @@ else
 define('SMARTY_DIR', BASE_PATH.'/libs/smarty/');
 define('ADODB_BASE_PATH', BASE_PATH.'/libs/adodb/');
 
-if (file_exists(ADODB_BASE_PATH.'adodb.inc.php'))
+if (file_exists(ADODB_BASE_PATH . 'adodb.inc.php'))
 {
 	// use a diff. dir per unix user as sometimes
 	// we run as nobody/apache/cron/manual user
 	// and we get permission problems.
-	$unix_user = trim(`whoami`);
-	$ADODB_CACHE_DIR = BASE_PATH.'/files/adodb_cache/' . $unix_user;
+	$unix_user = trim('whoami');
+	$ADODB_CACHE_DIR = BASE_PATH . '/files/adodb_cache/' . $unix_user;
 	unset($unix_user);
 
 	if(!file_exists($ADODB_CACHE_DIR))
@@ -46,8 +51,8 @@ if (file_exists(ADODB_BASE_PATH.'adodb.inc.php'))
 		mkdir($ADODB_CACHE_DIR);
 	}
 
-	require_once(ADODB_BASE_PATH.'adodb-exceptions.inc.php');
-	require_once(ADODB_BASE_PATH.'adodb.inc.php');
+	require_once(ADODB_BASE_PATH . 'adodb-exceptions.inc.php');
+	require_once(ADODB_BASE_PATH . 'adodb.inc.php');
 
 	/**
 	* ADODB Connection to DB
@@ -69,7 +74,7 @@ else
 	echo "ADODB class not found";
 }
 
-require_once(SMARTY_DIR.'Smarty.class.php');
+require_once(SMARTY_DIR . 'Smarty.class.php');
 
 class Smarty_Extend extends Smarty
 {
@@ -97,8 +102,8 @@ define('DEFAULT_CACHE_LIFETIME', 3600);
 
 $tpl = new Smarty_Extend(BASE_PATH,false);
 
-if (file_exists(BASE_PATH.'/libs/phpmailer/class.phpmailer.php')) {
-        require_once(BASE_PATH.'/libs/phpmailer/class.phpmailer.php');
+if (file_exists(BASE_PATH . '/libs/phpmailer/class.phpmailer.php')) {
+        require_once(BASE_PATH . '/libs/phpmailer/class.phpmailer.php');
 }
 else
 {
@@ -119,7 +124,7 @@ if (isset($config['DEBUG']) && $config['DEBUG']) {
 
 /* Set a few vars that are always available to all apps */
 
-$tpl->assign('config_path',$config['PATH']);
-$tpl->assign('base_path','');
+$tpl->assign('config_path', $config['PATH']);
+$tpl->assign('base_path', '');
 
 ?>
